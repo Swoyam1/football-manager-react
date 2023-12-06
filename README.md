@@ -1,6 +1,34 @@
-# React + Vite
+# FrontEnd Assignment [Beam Dynamics]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
 - [Live Link](https://beam-dynamics-frontend.vercel.app/)
+
+## :rocket: Local Development
+
+Start developing locally.
+
+#### Step-1
+
+clone this repo
+
+```sh
+git clone https://github.com/Swoyam1/beam-dynamics-frontend.git
+```
+
+#### Step-2
+
+Install all dependencies
+
+```sh
+npm install
+```
+
+#### Step-3: Starting the  application
+
+To Run the application in development mode execute this script
+
+```sh
+npm run dev
+```
+
+
+Thank You!
