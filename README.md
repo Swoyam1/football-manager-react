@@ -2,9 +2,7 @@
 
 - [Live Link](https://beam-dynamics-frontend.vercel.app/)
 
-## :rocket: Local Development
-
-Start developing locally.
+## Local Development
 
 #### Step-1
 
