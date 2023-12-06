@@ -1,0 +1,279 @@
+@import '../../style.scss';
+
+
+.formation{
+   padding: 32px;
+   display: flex;
+   gap: 32px;
+   position: relative;
+
+   .field{
+        //opacity: 0.6;
+        position: relative;
+
+        img{
+            height: 100%;
+        }
+
+        .Goalkeeper,.Defender,.Midfielder,.Forward{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            width: max-content;
+            color: $text-heading;
+
+            div{
+                height: 32px;
+                width: 32px;
+                background-color: $neutral-background-2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                font-weight: 600;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+        
+        .Goalkeeper.n1{
+            top: 254px;
+            left: 20px;
+        }
+        
+
+        
+        .Defender.n1{
+            top: 57px;
+            left: 180px;
+        }
+
+        .Defender.n2{
+            top: 173px;
+            left: 150px;
+        }
+
+        .Defender.n3{
+            top: 336px;
+            left: 166px;
+        }
+
+        .Defender.n4{
+            top: 453px;
+            left: 180px;
+        }
+        
+
+
+        .Midfielder.n1{
+            top: 98px;
+            left: 360px;
+        }
+
+        .Midfielder.n2{
+            top: 254px;
+            left: 360px;
+        }
+
+        .Midfielder.n3{
+            top: 414px;
+            left: 360px;
+        }
+
+
+        .Forward.n1{
+            top: 116px;
+            left: 525px;
+        }
+
+        .Forward.n2{
+            top: 254px;
+            left: 570px;
+        }
+
+        .Forward.n3{
+            top: 393px;
+            left: 536px;
+        }       
+        
+        
+}
+
+   .stats{
+        padding: 24px;
+        flex: 1;
+        width: 100%;
+        border-radius: 4px;
+        background: $neutral-background-1;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        position: relative;
+        
+            
+        
+        .line{
+            position: absolute;
+            height: 1px;
+            background: #494949;
+            top: 380px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 90%;
+        }
+
+        .image{
+            width: 274px;
+            height: 258px;
+            z-index: 8;
+            position: relative;
+            
+            img{
+                width: 175px;
+                height: 258px;
+                object-fit: cover;
+                z-index: -4;
+                margin-left: 50px;
+            }
+
+            span{
+                position: absolute;
+                z-index: 6;
+            }
+
+            .jersey{
+                top: 20px;
+                left: 8px;
+                height: 100px;
+                width: 40px;
+                color: $primary-orange;
+                font-size: 41.143px;
+                font-weight: 600;
+            }
+
+            .jerseyLarge{
+                z-index: 1;
+                top: 2px;
+                left: 2px;
+                height: 100px;
+                width: 40px;
+                color: #3A3731;
+                font-size: 109.714px;
+                font-weight: 600;
+                line-height: 100px; /* 91.146% */
+            }
+
+            .name{
+                top: 195px;
+                left: 0;
+                color: #FFF;
+                font-size: 24px;
+            }
+
+            .position{
+                top: 231px;
+                left: 0;
+                color: $primary-orange;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+
+        .personal{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+
+            .height,.weight,.nationality{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                span:nth-child(1){
+                    color: $text-normal;
+                    font-size: 12px;
+                }
+            }
+
+            .nationality div{
+                    display: flex;
+                    gap: 10px;
+                    
+                    img{
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        border: 1px solid $text-normal;
+                        object-fit: cover;
+                    }
+                
+            }
+        }
+
+        .game{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 24px;
+            .gameRow{
+                display: flex;
+                gap: 55px;
+                width: 100%;
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    width: 94px;
+                    
+                    span:nth-child(1){
+                        font-weight: 600;
+                        font-size: 24px;
+                        color: $primary-orange;
+                    }
+
+                    span:nth-child(2){
+                        font-size: 12px;
+                        color: $text-normal;
+                    }
+                }
+            }
+        }
+    }
+
+   .warning{
+    width: 334px;
+    padding: 24px;
+    background-color: $neutral-background-2;
+    border-radius: 8px;
+    box-shadow: $default-boxShadow;
+    position: absolute;
+    top: 224px;
+    left: 393px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    div{
+        display: flex;
+        gap: 8px;
+        span{ 
+            font-size: 18px;
+            font-weight: 600;
+            color: $text-heading;
+        }
+    }
+
+    span{
+        font-weight: 400;
+        color: $text-normal;
+    }
+
+   }
+
+}

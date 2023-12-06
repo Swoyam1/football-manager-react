@@ -1,0 +1,48 @@
+@import '../../style.scss';
+
+
+.sidebar{
+    padding: 19px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        cursor: pointer;
+    }
+
+    .bars,.users{
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .eclipse{
+            margin-right: 10px;
+            margin-left: 2px;
+        }
+
+        .eclipse.unselect{
+            opacity: 0;
+        }
+        
+    }   
+
+    .bars.unselect{
+        opacity: 0.3;
+
+    }
+    
+    .users.unselect{
+        opacity: 0.3;
+    }
+
+    .logo img{
+        border-radius: 50%;
+        border: 2px solid $primary-orange;
+        object-fit: cover;
+    }
+
+}

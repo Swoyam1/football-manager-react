@@ -1,0 +1,164 @@
+@import '../../style.scss';
+
+
+.importer{
+    position: absolute;
+    width: 720px;
+    height: 550px;
+    border-radius: 8px;
+    background: $neutral-background-2;
+    box-shadow: $default-boxShadow;
+    top: 88px;
+    left: 283px;
+    padding: 15px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .importerContent{
+        .importerHeader{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 600;
+            color: $text-heading;
+
+            img{
+                cursor: pointer;
+            }
+        }
+
+        .line{
+            width: 100%;
+            height: 1px;
+            background: #494949;
+            margin-top: 18px;
+            margin-bottom: 24px;
+        }
+
+        .upload{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .fileTitle{
+                color: $text-heading;
+            }
+
+            .fileSelect{
+
+                input{
+                    display: none;
+                }
+
+                .input{
+                    width: 300px;
+                    height: 23px;
+                    display: flex;
+                    padding: 12px 16px 11px 16px;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    gap: 10px;
+                    border: $border-default;
+                    border-radius: 8px;
+                    color: $text-normal;
+                    position: relative;
+
+
+                    div{
+                        height: 22px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        border: 0.1px solid #494949;
+                        border-radius: 8px;
+                        padding: 12px 16px 11px 16px;
+                        cursor: pointer;
+                        &:hover{
+                            color: $text-heading;
+                        }
+                    }
+                }
+
+                .input.error{
+                    border: $border-error;
+
+                    div{
+                        border: 0.1px solid $primary-red;
+                    }
+                }
+            }
+
+
+            .format{
+                margin-top: 8px;
+                font-weight: 400;
+                color: $text-muted;
+
+                p:nth-child(1){
+                    color: $primary-red;
+                }
+            }
+
+            
+            
+        }
+
+        .fileSummary{
+            margin-top: 32px;
+
+            table{
+                border-collapse: collapse;
+                margin-top: 24px;  
+                color: $text-normal;
+                width: 100%;
+                text-align: left;
+
+                thead{
+                margin-bottom: 18px;
+                    th{
+                        font-weight: 400;
+                    }
+                }
+                
+                tbody{
+                    margin-top: 18px;
+                    tr{
+                        margin-top: 18px;
+                        td{
+                            margin-top: 18px;
+                        }
+                    }
+                }
+                tbody:before {
+                    content:"@";
+                    display:block;
+                    line-height:8px;
+                    text-indent:-99999px;
+                }
+            }
+        }
+    }
+
+    
+        button{
+            align-self: flex-end;
+            color: $text-disabled;
+            background-color: inherit;
+            border: none;
+            padding: 12px 20px 11px 20px;
+            width: max-content;
+            border-radius: 8px;
+            
+        }
+        button.active{
+            background-color: $primary-orange;
+            color: $text-heading;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $primary-orange-hover;
+            }
+        }
+}
