@@ -1,4 +1,4 @@
-# FrontEnd Assignment [Beam Dynamics]
+# Football Manager Application
 
 - [Live Link](https://beam-dynamics-frontend.vercel.app/)
 
